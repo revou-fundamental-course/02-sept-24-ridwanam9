@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Container untuk Luas -->
+
+        <h1>Welcome to Katik</h1>
+
+        <p><a href="index.html">Segitiga</a></p>
+        <p><a href="jajargenjang.html">Jajar Genjang</a></p>
+
+        <div class="calc-container" id="calc-area">
+            <h2>Hitung Luas Segitiga</h2>
+            <br>
+            <div class="image-container">
+                <img src="assets/Screenshot 2024-09-10 221221.png" alt="Responsive Image" class="responsive-image">
+            </div>
+            <br>
+            <div>
+                <p>Rumus Luas Segitiga : </p>
+                <h5>Luas = 1/2 * a * t</h5>
+
+            </div>
+            
+            <form id="area-form-tri">
+                <div class="input-group">
+                    <label for="tri-base">Alas (cm):</label>
+                    <input type="number" id="tri-base" name="tri-base" required min="1">
+                </div>
+                <div class="input-group">
+                    <label for="tri-height">Tinggi (cm):</label>
+                    <input type="number" id="tri-height" name="tri-height" required min="1">
+                </div>
+                <button type="submit">Hitung Luas</button>
+            </form>
+            <div id="area-result-container">
+                <p>L = 1/2 * a * t</p>
+                <p>L = 1/2 * <span id="display-tri-base">-</span> * <span id="display-tri-height">-</span></p>
+                <p>Luas Segitiga: <span id="tri-area">-</span> cm²</p>
+            </div>
+            
+        </div>
+
+        <!-- Container untuk Keliling -->
+        <div class="calc-container" id="calc-perimeter">
+            <h2>Hitung Keliling Segitiga</h2>
+            <br>
+            <div class="image-container">
+                <img src="assets/Screenshot 2024-09-10 221221.png" alt="Responsive Image" class="responsive-image">
+            </div>
+            <br>
+            <div>
+                <p>Rumus Keliling Segitiga : </p>
+                <h5>Luas = a + b + c</h5>
+
+            </div>
+            <form id="perimeter-form-tri">
+                <div class="input-group">
+                    <label for="side1">Sisi 1 (cm):</label>
+                    <input type="number" id="side1" name="side1" required min="1">
+                </div>
+                <div class="input-group">
+                    <label for="side2">Sisi 2 (cm):</label>
+                    <input type="number" id="side2" name="side2" required min="1">
+                </div>
+                <div class="input-group">
+                    <label for="side3">Sisi 3 (cm):</label>
+                    <input type="number" id="side3" name="side3" required min="1">
+                </div>
+                <button type="submit">Hitung Keliling</button>
+            </form>
+            <div id="perimeter-result-container">
+                <p>Keliling Segitiga: <span id="perimeter-result">-</span> cm</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
