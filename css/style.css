@@ -87,6 +87,20 @@ button:hover {
     background-color: #45a049;
 }
 
+.button-page {
+    background-color: #2da3c0; /* Hijau */
+    color: white;              /* Teks putih */
+    padding: 10px 20px;        /* Spasi dalam */
+    border: none;              /* Tidak ada border */
+    border-radius: 5px;        /* Sudut melengkung */
+    cursor: pointer;
+    width: 100%;           /* Ubah kursor menjadi tangan saat hover */
+}
+
+.button-page:hover {
+    background-color: #276385; /* Warna lebih gelap saat di-hover */
+}
+
 
 .reset-button {
     position: absolute;
