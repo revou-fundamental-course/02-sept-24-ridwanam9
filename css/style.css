@@ -121,6 +121,10 @@ button:hover {
     text-align: left;
 }
 
+.error{
+    color: red;
+}
+
 /* Mobile-Friendly Adjustments */
 @media (max-width: 480px) {
     .container {
